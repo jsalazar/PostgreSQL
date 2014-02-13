@@ -3,7 +3,7 @@ from click_tracker
 where click_linkid = '123456489';
 
 
-// similar
+/* similar */
 
 select distinct substr(click_fancydate, 1, 16) as uniquedayclick 
 from click_tracker 
