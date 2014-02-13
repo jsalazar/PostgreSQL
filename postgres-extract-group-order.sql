@@ -3,3 +3,11 @@ SELECT DISTINCT click_linkid, count (*) as count, click_campaign, click_linkurl
         where extract(YEAR from TIMESTAMP WITH TIME ZONE 'epoch' + click_timestamp * INTERVAL '1 second') = 2009        
         GROUP BY click_linkid, click_campaign, click_linkurl 
         ORDER BY click_campaign, count DESC;
+
+/*
+FUNCTION
+extract(field from timestamp)
+
+DESCRIPTION
+The extract function retrieves subfields such as year or hour from date/time values
+*/
