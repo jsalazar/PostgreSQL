@@ -3,3 +3,11 @@ from click_tracker
 where click_linkid = '12345678' and click_day_of_year = '$dayOfYear'
 group by click_hour, click_year
 order by click_year, click_hour::numeric;
+
+/*
+FUNCTION
+expression::type
+
+DESCRIPTION
+A type cast specifies a run-time type conversion from one data type to another.
+*/
