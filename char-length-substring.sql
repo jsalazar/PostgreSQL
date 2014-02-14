@@ -1,5 +1,5 @@
 select distinct trim(substring(building,1,char_length(building)-4)) as building 
-from $qTable order by building; 
+from op_facilities order by building; 
 
 /*
 FUNCTION
